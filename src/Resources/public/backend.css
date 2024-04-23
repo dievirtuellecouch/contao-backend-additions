@@ -1,0 +1,42 @@
+/* Add custom widths for backend widgets. */
+.w25,
+.w75 {
+    float: left;
+    min-height: 80px;
+}
+
+.w25 {
+    width: calc(25% - 30px);
+}
+
+.w75 {
+    width: calc(75% - 30px);
+}
+
+
+@media (max-width: 767px) {
+    .w25,
+    .w75 {
+        float: none;
+        width: calc(50% - 30px);
+    }
+}
+
+/* Make submit footer sticky. */
+.tl_formbody_submit {
+    position: sticky;
+    bottom: 0;
+    z-index: 9000;
+}
+
+/* Add subtle label version for list views. */
+.tl_listing .subtle {
+    color: #999;
+    padding-left: 3px;
+}
+
+/* Fix clashing background colors when an
+info field is inside a serp preview */
+.serp-preview:has(.tl_info) {
+    background-color: #e9f0f7;
+}
