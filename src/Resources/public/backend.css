@@ -29,6 +29,16 @@
     z-index: 9000;
 }
 
+/* Make top button bar sticky. */
+#tl_buttons {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 0 1px #d0d0d280;
+    z-index: 9000;
+}
+
 /* Add subtle label version for list views. */
 .tl_listing .subtle {
     color: #999;
