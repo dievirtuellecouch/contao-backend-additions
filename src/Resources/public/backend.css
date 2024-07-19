@@ -2,10 +2,10 @@
 #tl_buttons {
     position: sticky;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: color-mix(in oklab, var(--content-bg), transparent 30%);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 0 0 1px #d0d0d280;
+    box-shadow: 0 0 0 1px color-mix(in oklab, var(--content-border), transparent 50%);
     z-index: 3;
 }
 
