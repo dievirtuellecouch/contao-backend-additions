@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+  <file datatype="php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="XPT.formattedNumberRegex">
+        <target>Die Zahl ist nicht richtig formatiert. Genutzt werden können Ziffern sowie „." als Tausendertrennzeichen und „," als Dezimaltrennzeichen.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

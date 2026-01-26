@@ -1,25 +1,25 @@
 {
     "name": "dvc/contao-backend-additions",
-    "description": "Adds additional styling and improvements to Contao’s backend.",
+    "description": "Contao bundle for backend UI improvements and additions",
+    "version": "0.9.1",
     "type": "contao-bundle",
-    "version": "1.9.0",
-    "require": {
-        "php": "^8.1",
-        "contao/core-bundle": "^4.13 || ^5.3"
-    },
-    "license": "LGPL-3.0-or-later",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Jonathan Hermann",
-            "email": "jh@d-v-c.net"
+            "name": "DVC",
+            "email": "info@dvc.de"
         }
     ],
+    "require": {
+        "php": "^8.1",
+        "contao/core-bundle": "^5.0"
+    },
     "autoload": {
         "psr-4": {
-            "DVC\\BackendAdditions\\": "src/"
+            "Dvc\\ContaoBackendAdditionsBundle\\": "src/"
         }
     },
     "extra": {
-        "contao-manager-plugin": "DVC\\BackendAdditions\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Dvc\\ContaoBackendAdditionsBundle\\ContaoManager\\Plugin"
     }
 }
