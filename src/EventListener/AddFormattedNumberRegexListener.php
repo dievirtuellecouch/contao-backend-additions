@@ -13,6 +13,8 @@ class AddFormattedNumberRegexListener
 {
     public const NAME = 'formatted_number';
 
+    private const EXPRESSION = '/^(?:\d+|\d{1,3}(?:\.\d{3})+)(?:,\d+)?$/';
+
     public function __construct(
         private readonly TranslatorInterface $translator
     ) {
@@ -24,9 +26,13 @@ class AddFormattedNumberRegexListener
             return false;
         }
 
-        $expression = '/[0-9\.,]+/';
+        $input = trim((string) $input);
 
-        if (!\preg_match($expression, (string) $input)) {
+        if ('' === $input) {
+            return true;
+        }
+
+        if (!\preg_match(self::EXPRESSION, $input)) {
             $widget->addError($this->translator->trans(
                 'XPT.formattedNumberRegex',
                 [],
